@@ -1,0 +1,204 @@
+@charset "utf-8";
+/*字体*/
+body,a{
+    color: black;
+}
+body{
+    background: #F8F8F8;
+}
+/*导航样式*/
+.navbar{
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    background: #ffffff;
+    opacity: 0.9;
+}
+.nav>li>a:hover,.nav>li>a:focus{
+    background: #57C78D;
+    color: #ffffff;
+}
+
+.dropdown-menu>li>a:hover{
+    background: #57C78D;
+    color: #ffffff;
+}
+.nav .open>a:focus{
+    background: #57C78D;
+}
+.dropdown-menu{
+    box-shadow: none;
+}
+.navbar-brand{
+    background: #57C78D;
+}
+.navbar-brand>a{
+    color: #ffffff;
+}
+.dropdown-menu>li>a{
+    padding: 10px 20px;
+}
+.main{
+    margin-top: 50px;
+}
+/*轮播*/
+.carousel-control.left{
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0)));
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+.carousel-control.right{
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0)));
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+.carousel-indicators li{
+    background: #ffffff;
+    border: 1px solid  #ffffff;
+}
+.carousel-indicators .active{
+    background: #57C78D;
+    border: 1px solid  #57C78D;
+}
+.carousel-inner{
+    position: relative;
+}
+.carousel-inner img{
+    width: 100%;
+}
+.container-fluid{
+    padding: 0;
+}
+.text-item{
+    padding: 10px 10px;
+    background: rgba(0,0,0,0.1);
+    color: #ffffff;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+/*section1*/
+section{
+    text-align: center;
+}
+.info-box{
+    padding: 50px 50px;
+    text-align: center;
+    background: #57C78D;
+    margin: 40px 0;
+    color: #ffffff;
+}
+.text-title{
+    font-size: 24px;
+}
+.text-content{
+    color: #666;
+}
+.logo{
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    margin: 15px auto;
+}
+.logo>i{
+    font-size: 60px;
+}
+.box-title{
+    font-size: 18px;
+}
+/*section2*/
+.team-box{
+    margin: 40px 0;
+    position: relative;
+}
+.team-circle{
+    background:  #57C78D;
+    color: #ffffff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+.part-2 .team-box img{
+    width: 400px;
+    height: 250px;
+    cursor: pointer;
+}
+.team-box img:hover{
+    opacity: 0.7;
+}
+.team-num{
+    display: none;
+    font-size: 20px;
+    padding: 5px;
+}
+/*footer*/
+ul{
+    list-style:none;
+}
+.footer{
+    background: #333;
+    padding: 30px;
+}
+.footer ul li{
+    float: left;
+}
+.footer ul:after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+.footer a{
+    text-decoration: none;
+    color: rgba(170,170,170,0.8);
+    padding: 0 10px;
+    border-right:1px solid rgba(170,170,170,0.8);
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.tips{
+    text-align: center;
+    color: #ffffff;
+}
+/*媒体查询*/
+@media screen and (max-width:1200px){
+    .text-item{
+        display: none;
+    }
+    .info-box{
+        margin: 10px 0;
+    }
+    .team-box{
+        margin: 10px 0;
+    }
+    .team-circle{
+        display: none;
+    }
+    .team-num{
+        display: block;
+    }
+}
+
